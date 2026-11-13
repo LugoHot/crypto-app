@@ -5,6 +5,7 @@ import HomePage from "./pages/home"
 import AboutPage from "./pages/about"
 import NotFoundPage from "./pages/not-found"
 import {Routes, Route} from 'react-router'
+import Heder  from './components/Heder'
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
 
     return(
       <>
+      <Heder/>
       <Routes>
         <Route path='/' element={ <HomePage
           coins={coins}
